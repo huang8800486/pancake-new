@@ -1,5 +1,6 @@
 import { Heading, Flex, Text, Skeleton, ChartIcon, CommunityIcon, SwapIcon } from '@pancakeswap/uikit'
 import { useTranslation } from '@pancakeswap/localization'
+import styled from 'styled-components'
 import useTheme from 'hooks/useTheme'
 import { formatLocalisedCompactNumber } from 'utils/formatBalance'
 import useSWRImmutable from 'swr/immutable'
@@ -32,10 +33,15 @@ const Stats = () => {
   const StakedCardData: IconCardData = {
     icon: <ChartIcon color="failure" width="36px" />,
   }
-
+  const PriceImg = styled.div`
+    margin-right: 8px;
+  `
   return (
     <Flex justifyContent="center" alignItems="center" flexDirection="column">
-      <GradientLogo height="48px" width="48px" mb="24px" />
+      {/* <GradientLogo height="48px" width="48px" mb="24px" /> */}
+      <PriceImg>
+        <img src="/images/decorations/phishing-warning-bunny.gif" height="80px" width="80px" alt="" />
+      </PriceImg>
       <Heading textAlign="center" scale="xl">
         {t('Used by millions.')}
       </Heading>

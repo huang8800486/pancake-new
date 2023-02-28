@@ -23,6 +23,9 @@ const PriceLink = styled.a`
     }
   }
 `;
+const PriceImg = styled.div`
+  margin-right: 8px;
+`;
 
 const CakePrice: React.FC<React.PropsWithChildren<Props>> = ({
   cakePriceUsd,
@@ -34,7 +37,10 @@ const CakePrice: React.FC<React.PropsWithChildren<Props>> = ({
       href="https://pancakeswap.finance/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82&chainId=56"
       target="_blank"
     >
-      <LogoRound width="24px" mr="8px" />
+      {/* <LogoRound width="24px" mr="8px" /> */}
+      <PriceImg>
+        <img src="/images/decorations/phishing-warning-bunny.gif" width="24px" alt="" />
+      </PriceImg>
       <Text color={color} bold>{`$${cakePriceUsd.toFixed(3)}`}</Text>
     </PriceLink>
   ) : showSkeleton ? (
