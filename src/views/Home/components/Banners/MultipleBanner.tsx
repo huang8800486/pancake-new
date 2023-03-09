@@ -3,11 +3,13 @@ import { useWeb3React } from '@pancakeswap/wagmi'
 import { useState } from 'react'
 import styled from 'styled-components'
 import SwiperCore, { Autoplay, EffectFade, Pagination } from 'swiper'
+import Image from 'next/image'
 import 'swiper/css'
 import 'swiper/css/effect-fade'
 import 'swiper/css/pagination'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { useMultipleBannerConfig } from './hooks/useMultipleBannerConfig'
+import { competitionImage, lotteryMobileImage, modMobileImage } from './images'
 
 const BannerPlaceHolder = styled.div<{ walletConnected: boolean }>`
   position: relative;
@@ -103,7 +105,7 @@ const MultipleBanner: React.FC<React.PropsWithChildren> = () => {
       }
     }
   }, [bannerList, swiperRef])
-
+  const newBannerList = [competitionImage, lotteryMobileImage, modMobileImage, competitionImage, competitionImage]
   return (
     <BannerPlaceHolder walletConnected={Boolean(account)}>
       <StyledSwiper
@@ -119,11 +121,14 @@ const MultipleBanner: React.FC<React.PropsWithChildren> = () => {
         loop
         pagination={{ clickable: true }}
       >
-        {bannerList.map((banner, index) => {
+        {newBannerList.map((banner, index) => {
           const childKey = `Banner${index}`
           return (
             <SwiperSlide style={{ padding: isDesktop || isTablet ? 20 : 0 }} key={childKey}>
-              {banner}
+              {/* {banner} */}
+              {/* <img src={competitionImage} alt="" /> */}
+              <Image src={banner} alt="banner" width={1112} height={192} placeholder="blur" />
+              {/* 1212 */}
             </SwiperSlide>
           )
         })}

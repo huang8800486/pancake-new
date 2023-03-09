@@ -42,14 +42,21 @@ const StyledLink = styled("a")`
     }
   }
 `;
+const LogoImg = styled("div")`
+  max-width: 300px;
+`;
 
 const Logo: React.FC<React.PropsWithChildren<Props>> = ({ isDark, href }) => {
   const { linkComponent } = useContext(MenuContext);
   const isAbsoluteUrl = href.startsWith("http");
   const innerLogo = (
     <>
-      <LogoIcon className="mobile-icon" />
-      <LogoWithTextIcon className="desktop-icon" isDark={isDark} />
+      {/* <LogoIcon className="mobile-icon" />
+      <LogoWithTextIcon className="desktop-icon" isDark={isDark} /> */}
+      <LogoImg>
+        {isDark ? <img src="/images/nav-title-dark.png" alt="" /> : <img src="/images/nav-title-light.png" alt="" />}
+        {/* <img src="/images/nav-title-light.png" alt="" /> */}
+      </LogoImg>
     </>
   );
 
