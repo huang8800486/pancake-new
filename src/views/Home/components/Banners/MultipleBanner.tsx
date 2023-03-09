@@ -9,16 +9,24 @@ import 'swiper/css/effect-fade'
 import 'swiper/css/pagination'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { useMultipleBannerConfig } from './hooks/useMultipleBannerConfig'
-import { competitionImage, lotteryMobileImage, modMobileImage } from './images'
+import { banner01, banner02, banner03, banner04, banner05 } from './images'
 
-const BannerPlaceHolder = styled.div<{ walletConnected: boolean }>`
+const BannerPlaceHolder = styled.div<{ walletConnected: boolean; isDesktop: boolean }>`
   position: relative;
-  height: 179px;
+  height: ${({ isDesktop }) => (isDesktop ? '239px' : '139px')};
+  background: -webkit-linear-gradient(#7645d9 0%, #452a7a 100%);
+  overflow: hidden;
+  border-radius: 32px;
+  margin: 20px 0;
+  .swiper {
+    height: 100%;
+    overflow: hidden;
+  }
   ${({ theme }) => theme.mediaQueries.sm} {
-    height: 221px;
+    height: 239px;
   }
   ${({ theme }) => theme.mediaQueries.lg} {
-    height: 232px;
+    height: 239px;
   }
   &::before {
     content: '';
@@ -28,7 +36,7 @@ const BannerPlaceHolder = styled.div<{ walletConnected: boolean }>`
     left: 0px;
     right: 0px;
     bottom: 0px;
-    background: -webkit-linear-gradient(#7645d9 0%, #452a7a 100%);
+    // background: -webkit-linear-gradient(#7645d9 0%, #452a7a 100%);
     ${({ theme }) => theme.mediaQueries.sm} {
       top: 20px;
       left: 20px;
@@ -48,8 +56,8 @@ const BannerPlaceHolder = styled.div<{ walletConnected: boolean }>`
   }
   ${({ theme }) => theme.mediaQueries.lg},${({ theme }) => theme.mediaQueries.md} {
     padding-top: 0;
-    margin-top: ${({ walletConnected }) => (walletConnected ? '60px' : '-32px')};
-    margin-bottom: ${({ walletConnected }) => (walletConnected ? '60px' : '30px')};
+    margin-top: ${({ walletConnected }) => (walletConnected ? '90px' : '-32px')};
+    margin-bottom: ${({ walletConnected }) => (walletConnected ? '90px' : '30px')};
   }
 `
 
@@ -74,6 +82,18 @@ const StyledSwiper = styled(Swiper)`
     }
     ${({ theme }) => theme.mediaQueries.lg} {
       bottom: 35px;
+    }
+  }
+  .swiper-slide {
+    height: 100% !important;
+    padding: 0 !important;
+
+    span {
+      height: 100% !important;
+    }
+    img {
+      width: 100% !important;
+      height: 100% !important;
     }
   }
   .swiper-pagination-bullet {
@@ -105,9 +125,9 @@ const MultipleBanner: React.FC<React.PropsWithChildren> = () => {
       }
     }
   }, [bannerList, swiperRef])
-  const newBannerList = [competitionImage, lotteryMobileImage, modMobileImage, competitionImage, competitionImage]
+  const newBannerList = [banner01, banner02, banner03, banner04, banner05]
   return (
-    <BannerPlaceHolder walletConnected={Boolean(account)}>
+    <BannerPlaceHolder walletConnected={Boolean(account)} isDesktop={isDesktop}>
       <StyledSwiper
         onSwiper={setSwiperRef}
         modules={[Autoplay, Pagination, EffectFade]}
@@ -127,7 +147,7 @@ const MultipleBanner: React.FC<React.PropsWithChildren> = () => {
             <SwiperSlide style={{ padding: isDesktop || isTablet ? 20 : 0 }} key={childKey}>
               {/* {banner} */}
               {/* <img src={competitionImage} alt="" /> */}
-              <Image src={banner} alt="banner" width={1112} height={192} placeholder="blur" />
+              <Image src={banner} alt="banner" placeholder="blur" />
               {/* 1212 */}
             </SwiperSlide>
           )
