@@ -876,7 +876,7 @@
   "ShibkingSwap has the most users of any decentralized platform, ever.": "ShibkingSwap có nhiều người dùng nhất trong số tất cả các nền tảng phi tập trung.",
   "Will you join them?": "Bạn có muốn tham gia không?",
   "$%tvl% staked": "$%tvl% được đặt cọc",
-  "The moon is made of pancakes.": "Mặt trăng được làm từ bánh pancake.",
+  "The moon is made of shibking.": "Mặt trăng được làm từ bánh shibking.",
   "Trade, earn, and win crypto on the most popular decentralized platform in the galaxy.": "Giao dịch, kiếm tiền và giành các giải thưởng tiền điện tử trên nền tảng phi tập trung phổ biến nhất trong dải ngân hà.",
   "Lunar bunny": "Thỏ ngọc",
   "Total supply": "Tổng lượng cung",
@@ -1938,5 +1938,10 @@
   "The URL you are accessing (Chain id: %chainId%) belongs to %network%; mismatching your wallet’s network. Please switch the network to continue.": "URL bạn đang truy cập (ID chuỗi: %chainId%) thuộc về %network%; không khớp với mạng lưới của ví bạn. Vui lòng chuyển mạng lưới để tiếp tục.",
   "Error connecting, please retry and confirm in wallet!": "Error connecting, please retry and confirm in wallet!",
   "Boost only applies to base APR (CAKE yield)": "Boost only applies to base APR (CAKE yield)",
-  "Available Boosted: Up to 2x": "Available Boosted: Up to 2x"
+  "Available Boosted: Up to 2x": "Available Boosted: Up to 2x",
+  "My superior": "My superior",
+  "My number of invites": "My number of invites",
+  "Invitation address list": "Invitation address list",
+  "Invite": "Invite",
+  "My Invite Link": "My Invite Link"
 }

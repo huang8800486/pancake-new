@@ -876,7 +876,7 @@
   "ShibkingSwap has the most users of any decentralized platform, ever.": "Ang ShibkingSwap ay may pinakamaraming mga user ng anumang desentralisadong platform, kailanman.",
   "Will you join them?": "Sasali ka ba sa kanila?",
   "$%tvl% staked": "$%tvl% na-stake",
-  "The moon is made of pancakes.": "Ang buwan ay gawa sa mga pancake.",
+  "The moon is made of shibking.": "Ang buwan ay gawa sa mga shibking.",
   "Trade, earn, and win crypto on the most popular decentralized platform in the galaxy.": "Mag-trade, kumita, at manalo ng crypto sa pinakatanyag na desentralisadong platform sa sang-kalawakan.",
   "Lunar bunny": "Lunar na bunny",
   "Total supply": "Kabuuang supply",
@@ -1938,5 +1938,10 @@
   "The URL you are accessing (Chain id: %chainId%) belongs to %network%; mismatching your wallet’s network. Please switch the network to continue.": "Ang URL na ina-access mo (Chain id: %chainId%) ay kabilang sa %network%; na hindi tumutugma sa network ng wallet mo. Lumipat ng network para magpatuloy.",
   "Error connecting, please retry and confirm in wallet!": "Nagkaroon ng error sa pagkonekta, pakisubukan ulit at kumpirmahin sa wallet!",
   "Boost only applies to base APR (CAKE yield)": "Boost only applies to base APR (CAKE yield)",
-  "Available Boosted: Up to 2x": "Available Boosted: Up to 2x"
+  "Available Boosted: Up to 2x": "Available Boosted: Up to 2x",
+  "My superior": "My superior",
+  "My number of invites": "My number of invites",
+  "Invitation address list": "Invitation address list",
+  "Invite": "Invite",
+  "My Invite Link": "My Invite Link"
 }

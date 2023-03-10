@@ -876,7 +876,7 @@
   "ShibkingSwap has the most users of any decentralized platform, ever.": "A valaha létezett decentralizált platformok közül mindegyiknél több felhasználója van a ShibkingSwap platformnak.",
   "Will you join them?": "Csatlakozik hozzájuk?",
   "$%tvl% staked": "%tvl% tétre",
-  "The moon is made of pancakes.": "A Hold palacsintákból van.",
+  "The moon is made of shibking.": "A Hold shibking van.",
   "Trade, earn, and win crypto on the most popular decentralized platform in the galaxy.": "Kereskedjen, keressen és nyerjen kriptovalutát a galaxis legnépszerűbb decentralizált platformján.",
   "Lunar bunny": "Holdbéli nyuszi",
   "Total supply": "Kínálat összesen",
@@ -1938,5 +1938,10 @@
   "The URL you are accessing (Chain id: %chainId%) belongs to %network%; mismatching your wallet’s network. Please switch the network to continue.": "Az Ön által elért URL (lánc azonosító: %chainId%) a %network% hálózathoz tartozik; nem egyezik az Ön tárcájának hálózatával. Kérjük, a folytatáshoz váltson hálózatot.",
   "Error connecting, please retry and confirm in wallet!": "Csatlakozási hiba; kérjük, próbálja meg újra és erősítse meg a tárcában!",
   "Boost only applies to base APR (CAKE yield)": "Boost only applies to base APR (CAKE yield)",
-  "Available Boosted: Up to 2x": "Available Boosted: Up to 2x"
+  "Available Boosted: Up to 2x": "Available Boosted: Up to 2x",
+  "My superior": "My superior",
+  "My number of invites": "My number of invites",
+  "Invitation address list": "Invitation address list",
+  "Invite": "Invite",
+  "My Invite Link": "My Invite Link"
 }

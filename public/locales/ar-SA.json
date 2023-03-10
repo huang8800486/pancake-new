@@ -876,7 +876,7 @@
   "ShibkingSwap has the most users of any decentralized platform, ever.": "ShibkingSwap تضم عددًا من المستخدمين أكثر من أي منصة غير مركزية حتى الآن.",
   "Will you join them?": "هل ستنضم إليهم؟",
   "$%tvl% staked": "تم رهن %tvl% دولار",
-  "The moon is made of pancakes.": "القمر مصنوع من الفطائر.",
+  "The moon is made of shibking.": "القمر مصنوع من الفطائر.",
   "Trade, earn, and win crypto on the most popular decentralized platform in the galaxy.": "تداول العملة المشفرة واربحها واكسبها على أشهر منصة غير مركزية في المجرة.",
   "Lunar bunny": "الأرنب القمري",
   "Total supply": "إجمالي التوريد",
@@ -1938,5 +1938,10 @@
   "The URL you are accessing (Chain id: %chainId%) belongs to %network%; mismatching your wallet’s network. Please switch the network to continue.": "The URL you are accessing (Chain id: %chainId%) belongs to %network%; mismatching your wallet’s network. Please switch the network to continue.",
   "Error connecting, please retry and confirm in wallet!": "Error connecting, please retry and confirm in wallet!",
   "Boost only applies to base APR (CAKE yield)": "Boost only applies to base APR (CAKE yield)",
-  "Available Boosted: Up to 2x": "Available Boosted: Up to 2x"
+  "Available Boosted: Up to 2x": "Available Boosted: Up to 2x",
+  "My superior": "My superior",
+  "My number of invites": "My number of invites",
+  "Invitation address list": "Invitation address list",
+  "Invite": "Invite",
+  "My Invite Link": "My Invite Link"
 }

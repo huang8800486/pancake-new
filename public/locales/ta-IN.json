@@ -876,7 +876,7 @@
   "ShibkingSwap has the most users of any decentralized platform, ever.": "ShibkingSwap, எந்தவொரு பரவலாக்கப்பட்ட தளத்திற்குமான பெரும்பாலான பயனர்களைக் கொண்டுள்ளது.",
   "Will you join them?": "அவர்களுடன் சேர்வீர்களா?",
   "$%tvl% staked": "$%tvl% ஸ்டேக் செய்தது",
-  "The moon is made of pancakes.": "நிலா pancakeகுகளால் ஆனது.",
+  "The moon is made of shibking.": "நிலா shibkingகுகளால் ஆனது.",
   "Trade, earn, and win crypto on the most popular decentralized platform in the galaxy.": "விண்மீன் மண்டலத்தில் மிகவும் பிரபலமான பரவலாக்கப்பட்ட தளத்தில் க்ரிப்டோவை டிரேட் செய்யுங்கள், ஈட்டுங்கள் மற்றும் வெல்லுங்கள்.",
   "Lunar bunny": "நிலா முயல்",
   "Total supply": "மொத்த சப்ளை",
@@ -1938,5 +1938,10 @@
   "The URL you are accessing (Chain id: %chainId%) belongs to %network%; mismatching your wallet’s network. Please switch the network to continue.": "The URL you are accessing (Chain id: %chainId%) belongs to %network%; mismatching your wallet’s network. Please switch the network to continue.",
   "Error connecting, please retry and confirm in wallet!": "Error connecting, please retry and confirm in wallet!",
   "Boost only applies to base APR (CAKE yield)": "Boost only applies to base APR (CAKE yield)",
-  "Available Boosted: Up to 2x": "Available Boosted: Up to 2x"
+  "Available Boosted: Up to 2x": "Available Boosted: Up to 2x",
+  "My superior": "My superior",
+  "My number of invites": "My number of invites",
+  "Invitation address list": "Invitation address list",
+  "Invite": "Invite",
+  "My Invite Link": "My Invite Link"
 }

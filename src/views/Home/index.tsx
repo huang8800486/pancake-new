@@ -107,7 +107,7 @@ const Home: React.FC<React.PropsWithChildren> = () => {
       >
         <MetricsSection />
       </PageSection>
-      <PageSection
+      {/* <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
         background={theme.colors.background}
         containerProps={{
@@ -122,8 +122,8 @@ const Home: React.FC<React.PropsWithChildren> = () => {
           </InnerWedgeWrapper>
         </OuterWedgeWrapper>
         <SalesSection {...swapSectionData(t)} />
-      </PageSection>
-      <PageSection
+      </PageSection> */}
+      {/* <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
         background={theme.colors.gradientCardHeader}
         index={2}
@@ -136,7 +136,7 @@ const Home: React.FC<React.PropsWithChildren> = () => {
         </OuterWedgeWrapper>
         <SalesSection {...earnSectionData(t)} />
         <FarmsPoolsRow />
-      </PageSection>
+      </PageSection> */}
       {/* <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
         containerProps={{
@@ -147,7 +147,7 @@ const Home: React.FC<React.PropsWithChildren> = () => {
       >
         <WinSection />
       </PageSection> */}
-      <PageSection
+      {/* <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
         background={theme.colors.background}
         index={2}
@@ -155,7 +155,7 @@ const Home: React.FC<React.PropsWithChildren> = () => {
       >
         <SalesSection {...cakeSectionData(t)} />
         <CakeDataRow />
-      </PageSection>
+      </PageSection> */}
       <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
         background="linear-gradient(180deg, #7645D9 0%, #5121B1 100%)"

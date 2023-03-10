@@ -1,5 +1,6 @@
-import { useMemo } from 'react'
+import { useMemo, useState, useEffect } from 'react'
 import styled from 'styled-components'
+import { useWeb3React } from '@pancakeswap/wagmi'
 import { Text, Flex, Box, CloseIcon, IconButton, useMatchBreakpoints } from '@pancakeswap/uikit'
 import { useTranslation } from '@pancakeswap/localization'
 import { usePhishingBannerManager } from 'state/user/hooks'
@@ -42,29 +43,27 @@ const SpeechBubble = styled.div`
 
 const PhishingWarningBanner: React.FC<React.PropsWithChildren> = () => {
   const { t } = useTranslation()
+  const { account } = useWeb3React()
   const [, hideBanner] = usePhishingBannerManager()
+  const [inviteCode, setInviteCode] = useState('')
   const { isMobile, isMd } = useMatchBreakpoints()
+  useEffect(() => {
+    setInviteCode(`${window.location.protocol}//${window.location.host}?inviteCode=${account}`)
+  }, [account])
   const warningTextAsParts = useMemo(() => {
-    const warningText = t("please make sure you're visiting https://xxx - check the URL carefully.")
-    return warningText.split(/(https:\/\/pancakeswap.finance)/g)
-  }, [t])
+    // const warningText = inviteCode
+    return inviteCode
+  }, [])
   const warningTextComponent = (
     <>
-      <Text as="span" color="warning" small bold textTransform="uppercase">
-        {t('Phishing warning: ')}
-      </Text>
-      {warningTextAsParts.map((text, i) => (
-        <Text
-          // eslint-disable-next-line react/no-array-index-key
-          key={i}
-          small
-          as="span"
-          bold={text === 'https://pancakeswap.finance'}
-          color={text === 'https://pancakeswap.finance' ? '#FFFFFF' : '#BDC2C4'}
-        >
-          {text}
-        </Text>
-      ))}
+      {account && (
+        <>
+          <Text as="span" color="warning" small bold textTransform="uppercase">
+            {t('My Invite Link: ')}
+          </Text>
+          <Text>{inviteCode}</Text>
+        </>
+      )}
     </>
   )
   return (

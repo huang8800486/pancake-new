@@ -1,3 +1,4 @@
+import { FC, useCallback } from 'react'
 import {
   MenuItemsType,
   DropdownMenuItemType,
@@ -10,6 +11,7 @@ import {
   NftIcon,
   NftFillIcon,
   MoreIcon,
+  useToast,
 } from '@pancakeswap/uikit'
 import { ContextApi } from '@pancakeswap/localization'
 import { nftsBaseUrl } from 'views/Nft/market/constants'
@@ -35,7 +37,6 @@ const addMenuItemSupported = (item, chainId) => {
     disabled: true,
   }
 }
-
 const config: (
   t: ContextApi['t'],
   isDark: boolean,
@@ -102,6 +103,14 @@ const config: (
       items: [],
     },
     {
+      label: t('Invite'),
+      icon: TrophyIcon,
+      fillIcon: TrophyFillIcon,
+      href: '/invited',
+      showItemsOnMobile: false,
+      items: [],
+    },
+    {
       label: t('Earn'),
       href: '/farms',
       icon: EarnIcon,
@@ -111,11 +120,22 @@ const config: (
       items: [
         {
           label: t('Farms'),
-          href: '/farms',
+          disabled: true,
+          // href: '/farms',
+          status: {
+            text: t('Coming Soon!'),
+          },
+          // onClick: () => {
+          //   alert(t('Coming Soon!'))
+          // },
         },
         {
           label: t('Pools'),
-          href: '/pools',
+          disabled: true,
+          // href: '/pools',
+          status: {
+            text: t('Coming Soon!'),
+          },
           supportChainIds: SUPPORT_ONLY_BSC,
         },
       ].map((item) => addMenuItemSupported(item, chainId)),

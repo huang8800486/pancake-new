@@ -1,7 +1,10 @@
+import { useEffect } from 'react'
 import styled from 'styled-components'
 import { useTranslation } from '@pancakeswap/localization'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
+import { useOptionsInvitedAddress } from 'state/options/hooks'
+import { defaultReferrerAddress } from 'state/options/types'
 import { DEFAULT_META, getCustomMeta } from 'config/constants/meta'
 import { useCakeBusdPrice } from 'hooks/useBUSDPrice'
 import Container from './Container'
@@ -27,10 +30,25 @@ export const PageMeta: React.FC<React.PropsWithChildren<{ symbol?: string }>> = 
     t,
     currentLanguage: { locale },
   } = useTranslation()
-  const { pathname } = useRouter()
+  const { pathname, query } = useRouter()
+  const [optionsInvitedAddress, setOptionsInvitedAddress] = useOptionsInvitedAddress()
   const cakePriceUsd = useCakeBusdPrice({ forceMainnet: true })
   const cakePriceUsdDisplay = cakePriceUsd ? `$${cakePriceUsd.toFixed(3)}` : '...'
-
+  useEffect(() => {
+    const inviteCode: any = query?.inviteCode
+    const code = localStorage.getItem('inviteCode')
+    if (!inviteCode) {
+      if (code === 'undefined' || code === 'null' || code === '' || !code) {
+        localStorage.setItem('inviteCode', defaultReferrerAddress)
+        setOptionsInvitedAddress(defaultReferrerAddress)
+      } else {
+        setOptionsInvitedAddress(code)
+      }
+    } else {
+      localStorage.setItem('inviteCode', inviteCode)
+      setOptionsInvitedAddress(inviteCode)
+    }
+  }, [query, setOptionsInvitedAddress])
   const pageMeta = getCustomMeta(pathname, t, locale) || {}
   const { title, description, image } = { ...DEFAULT_META, ...pageMeta }
   let pageTitle = cakePriceUsdDisplay ? [title, cakePriceUsdDisplay].join(' - ') : title
