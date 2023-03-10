@@ -61,7 +61,7 @@ const PhishingWarningBanner: React.FC<React.PropsWithChildren> = () => {
           <Text as="span" color="warning" small bold textTransform="uppercase">
             {t('My Invite Link: ')}
           </Text>
-          <Text>{inviteCode}</Text>
+          <Text color="#fff">{inviteCode}</Text>
         </>
       )}
     </>

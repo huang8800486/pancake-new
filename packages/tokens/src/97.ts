@@ -1,5 +1,5 @@
 import { ChainId, Token, WBNB } from '@pancakeswap/sdk'
-import { BUSD_TESTNET, CAKE_TESTNET } from './common'
+import { BUSD_TESTNET, CAKE_TESTNET, SHIBKING_TESTNET } from './common'
 
 export const bscTestnetTokens = {
   wbnb: WBNB[ChainId.BSC_TESTNET],
@@ -30,4 +30,5 @@ export const bscTestnetTokens = {
     'USDC',
     'Binance-Peg USD Coin',
   ),
+  shibking: SHIBKING_TESTNET,
 }

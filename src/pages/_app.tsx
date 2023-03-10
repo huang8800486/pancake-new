@@ -153,7 +153,8 @@ const App = ({ Component, pageProps }: AppPropsWithLayout) => {
       <EasterEgg iterations={2} />
       <ToastListener />
       <FixedSubgraphHealthIndicator />
-      <NetworkModal pageSupportedChains={Component.chains} />
+      {/* 网络提示 */}
+      {/* <NetworkModal pageSupportedChains={Component.chains} /> */}
     </ProductionErrorBoundary>
   )
 }

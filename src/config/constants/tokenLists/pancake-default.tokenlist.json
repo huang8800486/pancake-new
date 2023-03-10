@@ -51,14 +51,6 @@
       "logoURI": "https://pancakeswap.finance/images/tokens/0x55d398326f99059fF775485246999027B3197955.png"
     },
     {
-      "name": "PancakeSwap Token",
-      "symbol": "CAKE",
-      "address": "0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82",
-      "chainId": 56,
-      "decimals": 18,
-      "logoURI": "https://pancakeswap.finance/images/tokens/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82.png"
-    },
-    {
       "name": "Venus",
       "symbol": "XVS",
       "address": "0xcF6BB5389c92Bdda8a3747Ddb454cB7a64626C63",
@@ -113,14 +105,6 @@
       "chainId": 56,
       "decimals": 18,
       "logoURI": "https://pancakeswap.finance/images/tokens/0xA7f552078dcC247C2684336020c03648500C6d9F.png"
-    },
-    {
-      "name": "PancakeSwap Token",
-      "symbol": "CAKE",
-      "address": "0xFa60D973F7642B748046464e165A65B7323b0DEE",
-      "chainId": 97,
-      "decimals": 18,
-      "logoURI": "https://pancakeswap.finance/images/tokens/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82.png"
     },
     {
       "name": "BUSD Token",
@@ -209,6 +193,22 @@
       "chainId": 1,
       "decimals": 18,
       "logoURI": "https://pancakeswap.finance/images/tokens/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c.png"
+    },
+    {
+      "name": "Test Shibking Token",
+      "symbol": "Shibking",
+      "address": "0xE2EA4B7Bf7a8c3D2beF2485161Ea39D0Aa638e33",
+      "chainId": 97,
+      "decimals": 18,
+      "logoURI": "https://pancakeswap.finance/images/tokens/0xE2EA4B7Bf7a8c3D2beF2485161Ea39D0Aa638e33.png"
+    },
+    {
+      "name": "Shibking Token",
+      "symbol": "Shibking",
+      "address": "0xE2EA4B7Bf7a8c3D2beF2485161Ea39D0Aa638e33",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://pancakeswap.finance/images/tokens/0xE2EA4B7Bf7a8c3D2beF2485161Ea39D0Aa638e33.png"
     },
     {
       "name": "Wrapped BNB",

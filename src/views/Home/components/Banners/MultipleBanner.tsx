@@ -13,7 +13,7 @@ import { banner01, banner02, banner03, banner04, banner05 } from './images'
 
 const BannerPlaceHolder = styled.div<{ walletConnected: boolean; isDesktop: boolean }>`
   position: relative;
-  height: ${({ isDesktop }) => (isDesktop ? '239px' : '139px')};
+  height: ${({ isDesktop }) => (isDesktop ? '300px' : '139px')};
   background: -webkit-linear-gradient(#7645d9 0%, #452a7a 100%);
   overflow: hidden;
   border-radius: 32px;
@@ -23,10 +23,10 @@ const BannerPlaceHolder = styled.div<{ walletConnected: boolean; isDesktop: bool
     overflow: hidden;
   }
   ${({ theme }) => theme.mediaQueries.sm} {
-    height: 239px;
+    height: 300px;
   }
   ${({ theme }) => theme.mediaQueries.lg} {
-    height: 239px;
+    height: 300px;
   }
   &::before {
     content: '';

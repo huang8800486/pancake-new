@@ -1,8 +1,9 @@
 import { ChainId, Token, WBNB } from '@pancakeswap/sdk'
-import { BUSD_BSC, CAKE_MAINNET, USDT_BSC } from './common'
+import { BUSD_BSC, CAKE_MAINNET, SHIBKING_MAINNET, USDT_BSC } from './common'
 
 export const bscTokens = {
   wbnb: WBNB[ChainId.BSC],
+  shibking: SHIBKING_MAINNET,
   // bnb here points to the wbnb contract. Wherever the currency BNB is required, conditional checks for the symbol 'BNB' can be used
   bnb: new Token(
     ChainId.BSC,

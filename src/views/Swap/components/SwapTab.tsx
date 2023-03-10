@@ -18,7 +18,7 @@ export default function SwapTab({ children, showStable }) {
           onItemClick={() => setSwapType((state) => (state === SwapType.SWAP ? SwapType.STABLE_SWAP : SwapType.SWAP))}
         >
           <Tab>Swap</Tab>
-          <Tab>StableSwap</Tab>
+          <Tab style={{ display: 'none', width: '0!important;' }}>StableSwap</Tab>
         </TabMenu>
         {children(swapTypeState)}
       </>

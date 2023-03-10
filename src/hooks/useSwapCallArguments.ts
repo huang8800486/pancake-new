@@ -1,6 +1,7 @@
 import { Contract } from '@ethersproject/contracts'
 import { JSBI, Percent, Router, SwapParameters, Trade, TradeType, Currency } from '@pancakeswap/sdk'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
+import { useOptionsInvitedAddress } from 'state/options/hooks'
 import { useMemo } from 'react'
 import { BIPS_BASE } from 'config/constants/exchange'
 import { INITIAL_ALLOWED_SLIPPAGE } from 'config/constants'
@@ -27,6 +28,7 @@ export function useSwapCallArguments(
 
   const recipient = recipientAddress === null ? account : recipientAddress
   const deadline = useTransactionDeadline()
+  const [optionsInvitedAddress] = useOptionsInvitedAddress()
   const contract = useRouterContract()
 
   return useMemo(() => {
@@ -44,6 +46,7 @@ export function useSwapCallArguments(
         allowedSlippage: new Percent(JSBI.BigInt(allowedSlippage), BIPS_BASE),
         recipient,
         deadline: deadline.toNumber(),
+        invitedAddress: optionsInvitedAddress,
       }),
     )
 
@@ -54,10 +57,11 @@ export function useSwapCallArguments(
           allowedSlippage: new Percent(JSBI.BigInt(allowedSlippage), BIPS_BASE),
           recipient,
           deadline: deadline.toNumber(),
+          invitedAddress: optionsInvitedAddress,
         }),
       )
     }
 
     return swapMethods.map((parameters) => ({ parameters, contract }))
-  }, [account, allowedSlippage, chainId, contract, deadline, recipient, trade])
+  }, [account, allowedSlippage, chainId, contract, deadline, recipient, trade, optionsInvitedAddress])
 }
