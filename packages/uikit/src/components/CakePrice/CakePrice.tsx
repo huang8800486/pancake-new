@@ -41,7 +41,7 @@ const CakePrice: React.FC<React.PropsWithChildren<Props>> = ({
       <PriceImg>
         <img src="/images/decorations/phishing-warning-bunny.gif" width="24px" alt="" />
       </PriceImg>
-      <Text color={color} bold>{`$${cakePriceUsd.toFixed(3)}`}</Text>
+      {/* <Text color={color} bold>{`$${cakePriceUsd.toFixed(3)}`}</Text> */}
     </PriceLink>
   ) : showSkeleton ? (
     <Skeleton width={80} height={24} />
