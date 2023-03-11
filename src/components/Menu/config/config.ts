@@ -86,14 +86,14 @@ const config: (
       showItemsOnMobile: false,
       items: [],
     },
-    {
-      label: t('Limit'),
-      icon: SwapIcon,
-      fillIcon: SwapFillIcon,
-      href: '/limit-orders',
-      showItemsOnMobile: true,
-      items: [],
-    },
+    // {
+    //   label: t('Limit'),
+    //   icon: SwapIcon,
+    //   fillIcon: SwapFillIcon,
+    //   href: '/limit-orders',
+    //   showItemsOnMobile: true,
+    //   items: [],
+    // },
     {
       label: t('Liquidity'),
       icon: SwapIcon,
@@ -112,8 +112,9 @@ const config: (
     },
     {
       label: t('Earn'),
-      href: '/farms',
+      // href: '/farms',
       icon: EarnIcon,
+      disabled: true,
       fillIcon: EarnFillIcon,
       image: '/images/decorations/pe2.png',
       supportChainIds: SUPPORT_ONLY_BSC,
