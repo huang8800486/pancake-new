@@ -24,7 +24,6 @@ export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
   [ChainId.GOERLI]: [WNATIVE[ChainId.RINKEBY], USDC[ChainId.RINKEBY], BUSD[ChainId.RINKEBY]],
   [ChainId.BSC]: [
     bscTokens.wbnb,
-    bscTokens.cake,
     bscTokens.busd,
     bscTokens.usdt,
     bscTokens.btcb,
@@ -34,7 +33,6 @@ export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
   ],
   [ChainId.BSC_TESTNET]: [
     bscTestnetTokens.wbnb,
-    bscTestnetTokens.cake,
     bscTestnetTokens.busd,
     bscTestnetTokens.shibking,
   ],
@@ -65,7 +63,7 @@ export const SUGGESTED_BASES: ChainTokenList = {
   [ChainId.ETHEREUM]: [USDC[ChainId.ETHEREUM], WBNB[ChainId.ETHEREUM], BUSD[ChainId.ETHEREUM], USDT[ChainId.ETHEREUM]],
   [ChainId.RINKEBY]: [USDC[ChainId.RINKEBY], WNATIVE[ChainId.RINKEBY], BUSD[ChainId.RINKEBY]],
   [ChainId.GOERLI]: [USDC[ChainId.GOERLI], WNATIVE[ChainId.GOERLI], BUSD[ChainId.GOERLI]],
-  [ChainId.BSC]: [bscTokens.busd, bscTokens.cake, bscTokens.btcb, bscTokens.shibking],
+  [ChainId.BSC]: [bscTokens.busd,bscTokens.btcb, bscTokens.shibking],
   [ChainId.BSC_TESTNET]: [bscTestnetTokens.wbnb, bscTestnetTokens.busd, bscTestnetTokens.shibking],
 }
 
@@ -83,7 +81,6 @@ export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
   [ChainId.BSC]: [bscTokens.wbnb, bscTokens.dai, bscTokens.busd, bscTokens.usdt, bscTokens.cake, bscTokens.shibking],
   [ChainId.BSC_TESTNET]: [
     bscTestnetTokens.wbnb,
-    bscTestnetTokens.cake,
     bscTestnetTokens.busd,
     bscTestnetTokens.shibking,
   ],
